@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{product.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/album.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navi">
+            <article class="navi__image">
+                <a href="/"><img src="../imgs/logo.png" alt="Panic! At the Disco"></a>
+            </article>
+            <article class="navi__links">
+                <a href="#"> Tour </a>
+                <a href="#"> News </a>
+                <a href="#"> Music </a>
+                <a href="#"> Sing Up</a>
+                <a href="/tienda"> Store </a>
+                <a href="#"> <img src="../imgs/carrito.png"></a>
+            </article>
+        </nav>
+    </header>
+
+    <section class="producto">
+        <div class="contenedor">
+            <article class="producto__img">
+                <img src=".{{image}}">
+            </article>
+            <article class="producto__descripcion">
+                <h1>{{title}} - {{price}}</h1>
+                {{#each song}}
+                <li>{{this}}</li>
+                {{/each}}
+                <h3>Songs: {{songs}}</h3>
+                <h3>Year: {{year}}</h3>
+                <h3>Duration: {{duration}}</h3>
+                <h3>Genres:</h3>
+                {{#each genre}}
+
+                <li>{{this}}</li>
+                {{/each}}
+            </article>
+        </div>
+
+        <article>
+            <a class="agregar" data-title="{{title}}">
+                <button class="producto__agregar">
+                    <h1>Add to cart </h1>
+                </button>
+            </a>
+
+    |      <a href="/carro">
+            <button class="producto__checkout">
+                Go to Checkout
+            </button>
+            </a>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <article class="footer__header"></article>
+        <article class="footer__invitation">
+            <h2>Suscribe for more!</h2>
+        </article>
+        <form class="footer__newsletter" action="">
+            Email: <input type="text" name="fname"><br>
+            <input class="footer__button" type="submit" value="Submit">
+        </form>
+        <article class="footer__social">
+            <!--<img src="imgs/redes.png" alt="social network">-->
+        </article>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="../js/producto.js"></script>
+
+</body>
+
+</html>
