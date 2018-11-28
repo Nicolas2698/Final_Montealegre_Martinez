@@ -114,3 +114,7 @@ app.get("/tienda/producto", function (req, res) {
         res.render('merchan', cualquiera);
     });
 });
+
+app.get("/interaccion", function(req, res){
+    res.render("cancion");
+});
