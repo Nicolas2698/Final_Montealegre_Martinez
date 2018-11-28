@@ -37,10 +37,9 @@
                  <h3>
                     <strong>Title</strong> 
                  </h3>
-            {{#each album1}} 
-            
-             <a href="/principal/cancion?name={{name}}">
-            <p>{{name}}</p>
+            {{#each cancionesAlbum1}} 
+             <a href="/principal/cancion/{{this.id}}">
+            <p>{{this.cancion}}</p>
             <br>
              </a>
          
@@ -50,8 +49,8 @@
                     <h3>
                     <strong>Duration</strong> 
                  </h3>
-             {{#each album1}} 
-              <p>{{duration}}</p>
+             {{#each cancionesAlbum1}} 
+              <p>{{this.duration}}</p>
               <br>
                {{/each}}
                </div>
@@ -60,6 +59,103 @@
       
 
     </article>
+
+
+     <article class="album1">
+        <h1>Death of a Bachelor</h1>
+        <article class="album1__info">
+            <img src="../imgs/survey1.png" alt="" >
+             <div class="almbum1__info__descrip">
+                 <h3>
+                    <strong>Title</strong> 
+                 </h3>
+            {{#each cancionesAlbum2}} 
+             <a href="/principal/cancion/{{this.id}}">
+            <p>{{this.cancion}}</p>
+            <br>
+             </a>
+         
+            {{/each}}
+               </div>
+               <div class="almbum1__info__duration">
+                    <h3>
+                    <strong>Duration</strong> 
+                 </h3>
+             {{#each cancionesAlbum2}} 
+              <p>{{this.duration}}</p>
+              <br>
+               {{/each}}
+               </div>
+           
+        </article>
+      
+
+    </article>
+
+    
+     <article class="album1">
+        <h1>Too Weird to Live, Too Rare to Die!</h1>
+        <article class="album1__info">
+            <img src="../imgs/survey3.jpg" alt="" >
+             <div class="almbum1__info__descrip">
+                 <h3>
+                    <strong>Title</strong> 
+                 </h3>
+            {{#each cancionesAlbum3}} 
+             <a href="/principal/cancion/{{this.id}}">
+            <p>{{this.cancion}}</p>
+            <br>
+             </a>
+         
+            {{/each}}
+               </div>
+               <div class="almbum1__info__duration">
+                    <h3>
+                    <strong>Duration</strong> 
+                 </h3>
+             {{#each cancionesAlbum3}} 
+              <p>{{this.duration}}</p>
+              <br>
+               {{/each}}
+               </div>
+           
+        </article>
+      
+
+    </article>
+
+   
+     <article class="album1">
+        <h1>Vices and Virtues</h1>
+        <article class="album1__info">
+            <img src="../imgs/survey4.jpg" alt="" >
+             <div class="almbum1__info__descrip">
+                 <h3>
+                    <strong>Title</strong> 
+                 </h3>
+            {{#each cancionesAlbum4}} 
+             <a href="/principal/cancion/{{this.id}}">
+            <p>{{this.cancion}}</p>
+            <br>
+             </a>
+         
+            {{/each}}
+               </div>
+               <div class="almbum1__info__duration">
+                    <h3>
+                    <strong>Duration</strong> 
+                 </h3>
+             {{#each cancionesAlbum4}} 
+              <p>{{this.duration}}</p>
+              <br>
+               {{/each}}
+               </div>
+           
+        </article>
+      
+
+    </article>
+
 
     
     <footer class="footer">

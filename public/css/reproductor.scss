@@ -6,24 +6,11 @@
 
 }
 
-h1 {
-    font-weight: bolder;
-    font-size: 18pt;
-}
-
-h2 {
-    font-weight: normal;
-}
-
-h3 {
-    font-weight: normal;
-    font-size: 14pt;
-}
 
 header {
     width: 100%;
     height: 670px;
-    background-image: url("../imgs/ahorasi.jpg");
+    
    
     .navi {
         width: 100%;
@@ -79,65 +66,6 @@ header {
     }
 }
 
-.separer{
-    width: 100%;
-    height: 150px;
-    margin-top: 30px;
-   
-    text-align: center;
-}
-
-.album1{
-   margin-bottom: 60px;
-    h1{
-        font-size: 40px;
-        margin-bottom: 50px;
-        text-align: center;
-    }
-    &__info{
-        display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-between;
-    align-items: flex-start;
-       
-        img{
-            width: 500px;
-            order: 0;
-            flex: 0 1 auto;
-            align-self: auto;
-            padding-right: 100px;
-           
-        }
-        //width: 300px;
-    
-      .almbum1__info__descrip{
-            padding-right: 40px;
-            width: 350px;
-            order: 0;
-            flex: 0 1 auto;
-            align-self: auto;
-        a{
-            text-decoration: none;
-            p{
-                color: black;
-            }
-           
-        }
-
-        
-           
-        }
-        .almbum1__info__duration{
-            order: 0;
-            flex: 0 1 auto;
-            align-self: auto;
-
-        }
-     
-    }
-}
 
 
 

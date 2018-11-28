@@ -116,23 +116,65 @@ app.get("/tienda/producto", function (req, res) {
 });
 
 app.get("/1interaccion", function(req, res){
-    const collectionSongs = db.collection('1album');
-   
-  
+    const coleAlbum1 = db.collection('canciones').find();
+    const coleAlbum2 = db.collection('canciones').find();
+    const coleAlbum3 = db.collection('canciones').find();
+    const coleAlbum4 = db.collection('canciones').find();
 
-    collectionSongs.find().toArray(function (err, docs) {
+ 
+        coleAlbum1.filter({
+            album: "Pray for the Wicked"
+    });
+
+    coleAlbum2.filter({
+        album: "Death of a Bachelor"
+});
+
+coleAlbum3.filter({
+    album: "Too Weird to Live, Too Rare to Die!"
+});
+
+coleAlbum4.filter({
+    album: "Vices and Virtues"
+});
+    coleAlbum1.toArray(function (err, songsAlbum1) {
+        coleAlbum2.toArray(function(err,songsAlbum2){
+            coleAlbum3.toArray(function(err,songsAlbum3){
+                coleAlbum4.toArray(function(err,songsAlbum4){
+               
+       
+  
         if (err) {
             console.error(err);
             res.send(err);
             return;
         }
-      
-        const contexto = {
-            album1: docs,
-        };
+       // const contexto = {
+         //   canciones: docs,
+        //};
 
-        //console.log(docs)
-        res.render('principal', contexto);
+        res.render('principal', {
+            cancionesAlbum1: songsAlbum1 ,
+            cancionesAlbum2: songsAlbum2,
+            cancionesAlbum3: songsAlbum3,
+            cancionesAlbum4: songsAlbum4
+            });
+                 
+        });
+           
+        });
+        });
     });
   
+});
+
+app.get("/principal/cancion/:id", function (req, res) {
+    console.log(req.params.id);
+    var idd = parseInt(req.params.id);
+    const collection = db.collection('canciones');
+
+    collection.find({id: idd}).toArray(function(err, songs){
+        
+        res.render('reproductor', {cancion: songs[0]});
+    });
 });
