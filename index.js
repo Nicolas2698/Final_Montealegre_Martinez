@@ -115,6 +115,24 @@ app.get("/tienda/producto", function (req, res) {
     });
 });
 
-app.get("/interaccion", function(req, res){
-    res.render("cancion");
+app.get("/1interaccion", function(req, res){
+    const collectionSongs = db.collection('1album');
+   
+  
+
+    collectionSongs.find().toArray(function (err, docs) {
+        if (err) {
+            console.error(err);
+            res.send(err);
+            return;
+        }
+      
+        const contexto = {
+            album1: docs,
+        };
+
+        //console.log(docs)
+        res.render('principal', contexto);
+    });
+  
 });

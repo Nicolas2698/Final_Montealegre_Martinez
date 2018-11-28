@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/cancion.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/principal.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
@@ -12,7 +12,7 @@
      <header>
         <nav class="navi">
             <article class="navi__image">
-                <a href="/"><img src="../imgs/logo.png" alt="Panic! At the Disco"></a>
+                <a href="/"><img src="../imgs/logo-blanco.png" alt="Panic! At the Disco"></a>
             </article>
             <article class="navi__links">
                 <a href="#"> Tour </a>
@@ -20,12 +20,46 @@
                 <a href="#"> Music </a>
                 <a href="#"> Sing Up</a>
                 <a href="/tienda"> Store </a>
-                <a href="#"> <img src="../imgs/carrito.png"></a>
+                <a href="#"> <img  src="../imgs/carrito-blanco.png"></a>
             </article>
         </nav>
     </header>
 
+    <article class="separer">
+        <img src="../imgs/publicidad-negro.png" alt="">
+    </article>
 
+    <article class="album1">
+        <h1>Pray for the Wicked</h1>
+        <article class="album1__info">
+            <img src="../imgs/survey2.png" alt="" >
+             <div class="almbum1__info__descrip">
+                 <h3>
+                    <strong>Title</strong> 
+                 </h3>
+            {{#each album1}} 
+            
+             <a href="/principal/cancion?name={{name}}">
+            <p>{{name}}</p>
+            <br>
+             </a>
+         
+            {{/each}}
+               </div>
+               <div class="almbum1__info__duration">
+                    <h3>
+                    <strong>Duration</strong> 
+                 </h3>
+             {{#each album1}} 
+              <p>{{duration}}</p>
+              <br>
+               {{/each}}
+               </div>
+           
+        </article>
+      
+
+    </article>
 
     
     <footer class="footer">
