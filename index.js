@@ -56,6 +56,11 @@ app.get("/carro", function(req, res){
     res.render("carro");
 });
 
+app.get("/trans", function(req, res){
+    res.render("trans");
+});
+
+
 app.get('/tienda', function (req, res) {
     const collection = db.collection('productos');
     const collectionTwo = db.collection('albums');
