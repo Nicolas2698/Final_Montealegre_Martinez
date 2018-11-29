@@ -1,7 +1,3 @@
-//canvas
-let canvas = document.getElementById("canvas");
-
-canvas.style.height = canvas.clientWidth + "px";
 
 var visualizer = function (p) {
 
@@ -186,6 +182,13 @@ var visualizer = function (p) {
         }
         //
     };
+
+
+
+
+
+
+
 
     p.changePlay = function () {
         if (song != null) {

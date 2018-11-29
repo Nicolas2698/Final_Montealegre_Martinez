@@ -10,8 +10,8 @@
 header {
     width: 100%;
     height: 800px;
-    background-image: url("../imgs/bannernavOscuro.png");
-    
+   // background-image: url("../imgs/bannernavOscuro.png");
+    background-color: black;
    
     .navi {
         width: 100%;
@@ -67,77 +67,138 @@ header {
     }
 }
 
-.header__visualizer{
-    width: 100%;
+.player{
+    margin-top: 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: space-between;
-    align-items: center;
-    .visualizer{
-        width: 350px;
-        height: 350px;
-        background-color: rgb(19, 56, 56);
-        order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
-    margin-bottom: 40px;
+    align-items: flex-start;
 
-        color: white;
-        font-size: 15px;
-        display: flex;
-        justify-content: center;
-
-    }
-    .botones{
+    &__info{
+        margin-top: 70px;
         order: 0;
         flex: 0 1 auto;
         align-self: auto;
-
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: space-between;
-        align-items: flex-start;
+        color: white;
+        margin-right: 40px;
+        padding: 40px;
+        border-color: white;
+        border-style: solid;
         
-        #play{
-            width: 50px;
-            height: 50px;
-            background-color: red;
+        
 
-            order: 0;
-            flex: 0 1 auto;
-            align-self: auto;
+
+        h1{
+            font-size: 30px;
+            margin-bottom: 30px;
         }
 
-        #stop{
-            width: 50px;
-            
-            height: 50px;
-            background-color: red;
-
-            order: 0;
-            flex: 0 1 auto;
-            align-self: auto;
-        }
-
-        #pause{
-            width: 50px;
-            height: 50px;
-            background-color: red;
-
-            margin-left: 20px;
-            margin-right: 20px;
-
-            order: 0;
-            flex: 0 1 auto;
-            align-self: auto;
+        p{
+            font-size: 18px;
         }
     }
+
+    .header__visualizer{
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        padding: 60px;
+        margin-right: 60px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: space-between;
+        align-items: center;
+        border-color: white;
+        border-style: solid;
+        border-radius: 50%;
+        .visualizer{
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            
+            order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        margin-bottom: 20px;
     
+            color: white;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+    
+        }
+        .botones{
+            order: 0;
+            flex: 0 1 auto;
+            align-self: auto;
+    
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-between;
+            align-items: flex-start;
+            
+            #play{
+                width: 50px;
+                height: 50px;
+             
+    
+                order: 0;
+                flex: 0 1 auto;
+                align-self: auto;
+
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+    
+            #stop{
+                width: 50px;
+                
+                height: 50px;
+                
+    
+                order: 0;
+                flex: 0 1 auto;
+                align-self: auto;
+
+                
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+    
+            #pause{
+                width: 50px;
+                height: 50px;
+               
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+    
+                margin-left: 20px;
+                margin-right: 20px;
+    
+                order: 0;
+                flex: 0 1 auto;
+                align-self: auto;
+            }
+        }
+        
+    }
+
 }
+
+
 
 
 .footer {
