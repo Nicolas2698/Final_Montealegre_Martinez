@@ -40,7 +40,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 app.use(express.json());
 
-MongoClient.connect('mongodb+srv://cluster0-lvsre.mongodb.net/canciones?retryWrites=true', 
+MongoClient.connect('mongodb+srv://cluster0-lvsre.mongodb.net/canciones', 
 {
     auth:{
         user: 'nicolas2698',
