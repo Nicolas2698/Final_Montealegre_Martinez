@@ -83,11 +83,58 @@ header {
     flex: 0 1 auto;
     align-self: auto;
     margin-bottom: 40px;
+
+        color: white;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+
     }
-    .titulo{
+    .botones{
         order: 0;
         flex: 0 1 auto;
         align-self: auto;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+        align-items: flex-start;
+        
+        #play{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+
+            order: 0;
+            flex: 0 1 auto;
+            align-self: auto;
+        }
+
+        #stop{
+            width: 50px;
+            
+            height: 50px;
+            background-color: red;
+
+            order: 0;
+            flex: 0 1 auto;
+            align-self: auto;
+        }
+
+        #pause{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+
+            margin-left: 20px;
+            margin-right: 20px;
+
+            order: 0;
+            flex: 0 1 auto;
+            align-self: auto;
+        }
     }
     
 }

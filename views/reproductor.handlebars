@@ -26,18 +26,29 @@
         </nav>
 
         <article class="header__visualizer">
-        <div class="visualizer">
+        <div id="canvas"class="visualizer">
+
+        </div>
+        <article class="botones">
+        <div id="play"  >
 
         </div>
 
-        <div class="titulo">
-         <h1>
-        {{cancion.cancion}}
-    </h1>
+        <div id="pause" >
+            
         </div>
+        <div id="stop" >
+
+        </div>
+
+       
 
         </article>
-       
+
+        </article>
+        <h1>
+        {{cancion.cancion}}
+          </h1>
     </header>
 
    
@@ -54,8 +65,15 @@
             <!--<img src="imgs/redes.png" alt="social network">-->
         </article>
     </footer>
+<script>
+    var idSonido={{cancion.id}};
+</script>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+<script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.js"></script>
+
+<script src="/js/reproductor.js"></script>
     
 </body>
 </html>
