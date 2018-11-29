@@ -44,7 +44,7 @@ MongoClient.connect('mongodb+srv://cluster0-c5bcf.mongodb.net/canciones',
 {
     auth:{
         user: 'nicolas2698@outlook.com',
-        password: 'ultimate26*'
+        password: 'a00056848'
 
     }
 },
