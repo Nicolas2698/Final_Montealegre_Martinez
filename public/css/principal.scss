@@ -242,7 +242,7 @@ header {
         order: 0;
     flex: 0 1 auto;
     align-self: auto;
-    margin-right: 30px;
+    margin-right: 50px;
     }
 
     div{
@@ -254,6 +254,17 @@ header {
 
     h1{
         font-size: 35px;
+        color: white;
+    }
+
+    button{
+        margin-top: 60px;
+        padding: 15px;
+        font-size: 20px;
+        border: solid;
+        border-color: white;
+        background: none;
+        border-radius: 10%;
         color: white;
     }
     }
