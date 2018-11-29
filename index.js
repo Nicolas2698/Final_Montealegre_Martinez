@@ -40,12 +40,21 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 app.use(express.json());
 
-MongoClient.connect('mongodb://localhost:27017', function (err, client) {
+MongoClient.connect('mongodb+srv://cluster0-c5bcf.mongodb.net/canciones', 
+{
+    auth:{
+        user: 'nicolas2698',
+        password: 'ultimate26*'
+
+    }
+},
+
+function (err, client) {
     if (err) throw err;
 
-    db = client.db(dbName);
+    db = client.db('canciones');
 
-    app.listen(3000);
+    app.listen(process.env.PORT || 1234);
 });
 
 app.get("/", function (req, res) {
