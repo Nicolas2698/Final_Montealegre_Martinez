@@ -43,7 +43,7 @@ app.use(express.json());
 MongoClient.connect('mongodb+srv://cluster0-c5bcf.mongodb.net/canciones', 
 {
     auth:{
-        user: 'nicolas2698',
+        user: 'nicolas2698@outlook.com',
         password: 'ultimate26*'
 
     }
@@ -71,7 +71,7 @@ app.get("/trans", function(req, res){
 
 
 app.get('/tienda', function (req, res) {
-    const collection = db.collection('productos');
+    const collection = db.collection('products');
     const collectionTwo = db.collection('albums');
     let dokss;
 
