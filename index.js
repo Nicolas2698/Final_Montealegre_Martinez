@@ -40,10 +40,10 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 app.use(express.json());
 
-MongoClient.connect('mongodb+srv://cluster0-c5bcf.mongodb.net/canciones', 
+MongoClient.connect('mongodb+srv://cluster0-lvsre.mongodb.net/canciones?retryWrites=true', 
 {
     auth:{
-        user: 'nicolas2698@outlook.com',
+        user: 'nicolas2698',
         password: 'a00056848'
 
     }
