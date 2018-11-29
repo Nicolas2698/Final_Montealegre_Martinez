@@ -30,7 +30,7 @@
                 This is our new Music player for your favorites songs
             </h1>
 
-            <button>
+            <button class="boton">
               <strong> Sing up</strong> 
             </button>
         </div>
@@ -46,7 +46,7 @@
     <article class="album1">
         <h1>Pray for the Wicked</h1>
         <article class="album1__info">
-            <img src="../imgs/survey2.png" alt="" >
+            <img id="survey1" src="../imgs/prueba-03.svg" alt="" >
              <div class="almbum1__info__descrip">
                  <h3>
                     <strong>Title</strong> 
@@ -82,7 +82,7 @@
      <article class="album1">
         <h1>Death of a Bachelor</h1>
         <article class="album1__info">
-            <img src="../imgs/survey1.png" alt="" >
+            <img  src="../imgs/survey1.png" alt="" >
              <div class="almbum1__info__descrip">
                  <h3>
                     <strong>Title</strong> 
@@ -197,9 +197,14 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
 <script>
-   
-   TweenMax.staggerFrom('p',.2,{opacity:0},.2);
+
+    document.querySelector('.boton').addEventListener('click',function(){
+TweenMax.to('#survey1',1,{opacity:1,y:0,delay});
+    });
+    
+   TweenMax.staggerFrom('p',.1,{opacity:0},.13);
     TweenMax.staggerFrom('a',.3,{opacity:0,},.2);
+   
 </script>
 
 
